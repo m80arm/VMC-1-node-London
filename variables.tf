@@ -7,6 +7,9 @@ variable "aws_access_key" {
 variable "aws_secret_key" {
 }
 
+variable "aws_account_number" {
+}
+
 variable "region" {
   default = {
     london    = "eu-west-2"
@@ -42,9 +45,7 @@ variable "my_frankfurt_subnets" {
 ###################################################################################################
 
 variable "vmc_api_token" {
-
 }
 
 variable "vmc_org_id"  {
-
 }

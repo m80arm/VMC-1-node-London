@@ -102,3 +102,12 @@ provider "vmc" {
   refresh_token = var.vmc_api_token
   org_id = var.vmc_org_id
 }
+
+data "vmc_connected_accounts" "my_aws_account" {
+  account_number = var.aws_account_number
+}
+
+data "vmc_customer_subnets" "my_subnets" {
+  connected_account_id = data.vmc_connected_accounts.my_aws_account.ids[0]
+  region = "eu-west-2"
+}
