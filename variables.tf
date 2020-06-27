@@ -42,7 +42,9 @@ variable "my_frankfurt_subnets" {
 ###################################################################################################
 
 variable "vmc_api_token" {
+
 }
 
-variable "vmc_org_id  {
+variable "vmc_org_id"  {
+
 }
